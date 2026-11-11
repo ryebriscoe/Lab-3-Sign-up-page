@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> Sign Up Page </title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container signup-container my-4">
+      <div class="card shadow-sm">
+         <div class="card-body">
+
+            <h1 class="text-center mb-4 signup-title"> Sign Up Form</h1>
+
+            <form id="signupForm" action="welcome.html">
+
+               <!-- Personal info -->
+               <div class="mb-3">
+                  <label class="form-label" for="fName">First Name:</label>
+                  <input type="text" class="form-control" id="fName" name="fName">
+               </div>
+
+               <div class="mb-3">
+                  <label class="form-label" for="lName">Last Name:</label>
+                  <input type="text" class="form-control" id="lName" name="lName">
+               </div>
+
+               <div class="mb-3">
+                  Gender:
+                  <div class="form-check form-check-inline ms-2">
+                     <input class="form-check-input" type="radio" name="gender" id="male" value="m">
+                     <label class="form-check-label" for="male">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="gender" id="female" value="f">
+                     <label class="form-check-label" for="female">Female</label>
+                  </div>
+               </div>
+
+               <!-- Location -->
+               <div class="mb-3">
+                  <label class="form-label" for="zip">Zip Code:</label>
+                  <input type="text" class="form-control" id="zip" name="zip">
+                  <span id="zipError" class="form-text"></span>
+               </div>
+
+               <div class="mb-3">
+                  City: <span id="city"></span><br>
+                  Latitude: <span id="latitude"></span><br>
+                  Longitude: <span id="longitude"></span>
+               </div>
+
+               <div class="mb-3">
+                  <label class="form-label" for="state">State:</label>
+                  <select class="form-select" id="state" name="state">
+                     <option value="">Loading states...</option>
+                  </select>
+               </div>
+
+               <div class="mb-3">
+                  <label class="form-label" for="county">Select a County:</label>
+                  <select class="form-select" id="county" name="county"></select>
+               </div>
+
+               <!-- Account -->
+               <div class="mb-3">
+                  <label class="form-label" for="username">Desired Username:</label>
+                  <input type="text" class="form-control" id="username" name="username">
+                  <span id="usernameError" class="form-text"></span>
+               </div>
+
+               <div class="mb-3">
+                  <label class="form-label" for="password">Password:</label>
+                  <input type="password" class="form-control" id="password" name="password">
+                  <span id="passwordSuggestion" class="form-text"></span>
+               </div>
+
+               <div class="mb-3">
+                  <label class="form-label" for="passwordAgain">Type Password Again:</label>
+                  <input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
+                  <span id="passwordError" class="form-text"></span>
+               </div>
+
+               <button class="btn btn-primary w-100">Sign up!</button>
+            </form>
+
+         </div>
+      </div>
+   </div>
+   <script src="js/script.js"></script>
+   <footer class="text-center py-4">
+        <p>&copy; 2026 Ariya Briscoe. All rights reserved.</p>
+        <p>This site is for academic purposes only.</p>
+        <p>CST 336 Internet Programming.</p>
+        <img src="img/csumb-logo.png" alt="CSUMB Logo">
+    </footer>
+</body>
+
+</html>

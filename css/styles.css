@@ -1,0 +1,23 @@
+/* page background color */
+body {
+  background-color: #f2f4f7;
+}
+
+/*  Sign up form size */
+.signup-container {
+  max-width: 600px;
+}
+
+.signup-title {
+  color: #0d6efd;
+}
+
+/* Messages under the inputs */
+.form-text {
+  font-size: 0.9rem;
+}
+
+/*  Welcome page */
+.welcome-container {
+  margin-top: 80px;
+}
